@@ -1,0 +1,445 @@
+<Style>
+body {
+background:#ddd;
+margin-top:10px;
+}
+
+.chat-box {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden
+}
+
+.chats {
+    padding: 30px 15px
+}
+
+.chat-avatar {
+    float: right
+}
+
+.chat-avatar .avatar {
+    width: 30px
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+.chat-body {
+    display: block;
+    margin: 10px 30px 0 0;
+    overflow: hidden
+}
+
+.chat-body:first-child {
+    margin-top: 0
+}
+
+.chat-content {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 8px 15px;
+    margin: 0 20px 10px 0;
+    clear: both;
+    color: #fff;
+    background-color: #62a8ea;
+    border-radius: 4px;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+}
+
+.chat-content:before {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 5px solid transparent;
+    border-left-color: #62a8ea
+}
+
+.chat-content>p:last-child {
+    margin-bottom: 0
+}
+
+.chat-content+.chat-content:before {
+    border-color: transparent
+}
+
+.chat-time {
+    display: block;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, .6)
+}
+
+.chat-left .chat-avatar {
+    float: left
+}
+
+.chat-left .chat-body {
+    margin-right: 0;
+    margin-left: 30px
+}
+
+.chat-left .chat-content {
+    float: left;
+    margin: 0 0 10px 20px;
+    color: #76838f;
+    background-color: #dfe9ef
+}
+
+.chat-left .chat-content:before {
+    right: auto;
+    left: -10px;
+    border-right-color: #dfe9ef;
+    border-left-color: transparent
+}
+
+.chat-left .chat-content+.chat-content:before {
+    border-color: transparent
+}
+
+.chat-left .chat-time {
+    color: #a3afb7
+}
+
+.panel-footer {
+    padding: 0 30px 15px;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.avatar img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 0 none;
+    border-radius: 1000px;
+}
+.chat-avatar .avatar {
+    width: 30px;
+}
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    white-space: nowrap;
+    border-radius: 1000px;
+    vertical-align: bottom;
+}
+</style>
+
+
+
+<div class="container bootstrap snippets bootdeys">
+<div class="col-md-7 col-xs-12 col-md-offset-2">
+  <!-- Panel Chat -->
+  <div class="panel" id="chat">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <i class="icon wb-chat-text" aria-hidden="true"></i> Interview 1
+      </h3>
+    </div>
+
+
+
+
+
+    <div class="panel-body">
+      <div class="chats">
+        <div class="chat">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>
+                Thank you for your time today Interviewee 2.
+                <br>I will be showing you a series of charts and ask you a series of questions based on the visuals you see.
+<br>             <br>
+<b>Q1</b>  Looking at the chart on the screen in front of you, what do you think the chart represents? </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="chat chat-left">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Edward Fletcher">
+              <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>Well, I am just looking around.</p>
+              
+            </div>
+          </div>
+        </div>
+
+</div>
+
+
+
+
+    <div class="panel-body">
+      <div class="chats">
+        <div class="chat">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>
+<b>Q2</b>  Can you please describe what the different lines represent? </p>
+        
+             
+            </div>
+          </div>
+        </div>
+        <div class="chat chat-left">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Edward Fletcher">
+              <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>Well, I am just looking around.</p>
+              
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
+
+
+    <div class="panel-body">
+      <div class="chats">
+        <div class="chat">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>
+       <b>Q3</b>  Is there anything in the visual that you think is confusing or something you think you do not quite understand? </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="chat chat-left">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Edward Fletcher">
+              <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>Well, I am just looking around.</p>
+              
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
+
+    <div class="panel-body">
+      <div class="chats">
+        <div class="chat">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>
+   <b>Q4</b>  Who do you think this chart is intended for or who would use this visualization?</p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="chat chat-left">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Edward Fletcher">
+              <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>Well, I am just looking around.</p>
+              
+            </div>
+          </div>
+        </div> 
+</div>
+
+
+
+
+
+
+
+
+    <div class="panel-body">
+      <div class="chats">
+        <div class="chat">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>
+       <b>Q5</b>  Would you change anything about the chart/visualization? </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="chat chat-left">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Edward Fletcher">
+              <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>Well, I am just looking around.</p>
+              
+            </div>
+          </div>
+        </div>
+
+</div>
+
+
+
+
+
+
+
+    <div class="panel-body">
+      <div class="chats">
+        <div class="chat">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>
+       <b>Q6</b>  What do you like the most about the chart? </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="chat chat-left">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Edward Fletcher">
+              <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>Well, I am just looking around.</p>
+              
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="panel-body">
+      <div class="chats">
+        <div class="chat">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>
+       <b>Q7</b>  If I asked you to represent this information using any other chart/visual which one would that be? </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="chat chat-left">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="Edward Fletcher">
+              <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>Well, I am just looking around.</p>
+              
+            </div>
+          </div>
+        </div>
+</div>
+
+    <div class="panel-body">
+      <div class="chats">
+        <div class="chat">
+          <div class="chat-avatar">
+            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="...">
+              <i></i>
+            </a>
+          </div>
+          <div class="chat-body">
+            <div class="chat-content">
+              <p>
+        Thank you for all your Input. This will really help me shape my final visual. </p>
+             
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer">
+    </div>
+  </div>
+  <!-- End Panel Chat -->
+</div>
+</div>
